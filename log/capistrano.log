@@ -61,3 +61,111 @@
   INFO [02fb3fec] Running /usr/bin/env mkdir -p /home/deploy/apps/my-app/releases/20170506184213 as root@128.199.174.38
   INFO [02fb3fec] Finished in 0.103 seconds with exit status 0 (successful).
   INFO [3ede8f55] Running /usr/bin/env git archive master | tar -x -f - -C /home/deploy/apps/my-app/releases/20170506184213 as root@128.199.174.38
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-05-07 01:50:17 +0700 cap staging deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [fe89c1a1] Running /usr/bin/env mkdir -p /tmp/my-app/ as root@128.199.174.38
+  INFO [fe89c1a1] Finished in 0.857 seconds with exit status 0 (successful).
+  INFO Uploading /tmp/my-app/git-ssh.sh 100.0%
+  INFO [86df6a17] Running /usr/bin/env chmod +rx /tmp/my-app/git-ssh.sh as root@128.199.174.38
+  INFO [86df6a17] Finished in 0.089 seconds with exit status 0 (successful).
+  INFO [7adc5e75] Running /usr/bin/env git ls-remote --heads git@github.com:no5013/capistrano_practice.git as root@128.199.174.38
+  INFO [7adc5e75] Finished in 2.624 seconds with exit status 0 (successful).
+  INFO [819f2a85] Running /usr/bin/env mkdir -p /home/deploy/apps/my-app/shared /home/deploy/apps/my-app/releases as root@128.199.174.38
+  INFO [819f2a85] Finished in 0.090 seconds with exit status 0 (successful).
+  INFO [c91bbdd1] Running /usr/bin/env mkdir -p /home/deploy/apps/my-app/shared/bin /home/deploy/apps/my-app/shared/log /home/deploy/apps/my-app/shared/tmp/pids /home/deploy/apps/my-app/shared/tmp/cache /home/deploy/apps/my-app/shared/tmp/sockets /home/deploy/apps/my-app/shared/vendor/bundle /home/deploy/apps/my-app/shared/public/system /home/deploy/apps/my-app/shared/public/assets as root@128.199.174.38
+  INFO [c91bbdd1] Finished in 0.090 seconds with exit status 0 (successful).
+  INFO [f37c4d50] Running /usr/bin/env mkdir -p /home/deploy/apps/my-app/shared/config as root@128.199.174.38
+  INFO [f37c4d50] Finished in 0.088 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/deploy/apps/my-app/repo
+  INFO [587e3adf] Running /usr/bin/env git remote update --prune as root@128.199.174.38
+  INFO [587e3adf] Finished in 3.009 seconds with exit status 0 (successful).
+  INFO [14818dc6] Running /usr/bin/env mkdir -p /home/deploy/apps/my-app/releases/20170506185022 as root@128.199.174.38
+  INFO [14818dc6] Finished in 0.090 seconds with exit status 0 (successful).
+  INFO [02b42e87] Running /usr/bin/env git archive master | tar -x -f - -C /home/deploy/apps/my-app/releases/20170506185022 as root@128.199.174.38
+  INFO [02b42e87] Finished in 0.107 seconds with exit status 0 (successful).
+  INFO [5c8aedd8] Running /usr/bin/env echo "2f55c23982e14be50dd65fb257059be43cb11acf" >> REVISION as root@128.199.174.38
+  INFO [5c8aedd8] Finished in 0.096 seconds with exit status 0 (successful).
+  INFO [333bf05e] Running /usr/bin/env mkdir -p /home/deploy/apps/my-app/releases/20170506185022/config as root@128.199.174.38
+  INFO [333bf05e] Finished in 0.090 seconds with exit status 0 (successful).
+  INFO [b5d0f6f8] Running /usr/bin/env rm /home/deploy/apps/my-app/releases/20170506185022/config/database.yml as root@128.199.174.38
+  INFO [b5d0f6f8] Finished in 0.091 seconds with exit status 0 (successful).
+  INFO [a8bc170d] Running /usr/bin/env ln -s /home/deploy/apps/my-app/shared/config/database.yml /home/deploy/apps/my-app/releases/20170506185022/config/database.yml as root@128.199.174.38
+  INFO [a8bc170d] Finished in 0.095 seconds with exit status 0 (successful).
+  INFO [fff00ebe] Running /usr/bin/env mkdir -p /home/deploy/apps/my-app/releases/20170506185022 /home/deploy/apps/my-app/releases/20170506185022/tmp /home/deploy/apps/my-app/releases/20170506185022/vendor /home/deploy/apps/my-app/releases/20170506185022/public as root@128.199.174.38
+  INFO [fff00ebe] Finished in 0.092 seconds with exit status 0 (successful).
+  INFO [2aeb893e] Running /usr/bin/env rm -rf /home/deploy/apps/my-app/releases/20170506185022/bin as root@128.199.174.38
+  INFO [2aeb893e] Finished in 0.090 seconds with exit status 0 (successful).
+  INFO [b2b98959] Running /usr/bin/env ln -s /home/deploy/apps/my-app/shared/bin /home/deploy/apps/my-app/releases/20170506185022/bin as root@128.199.174.38
+  INFO [b2b98959] Finished in 0.092 seconds with exit status 0 (successful).
+  INFO [0b58220d] Running /usr/bin/env rm -rf /home/deploy/apps/my-app/releases/20170506185022/log as root@128.199.174.38
+  INFO [0b58220d] Finished in 0.094 seconds with exit status 0 (successful).
+  INFO [ec75375a] Running /usr/bin/env ln -s /home/deploy/apps/my-app/shared/log /home/deploy/apps/my-app/releases/20170506185022/log as root@128.199.174.38
+  INFO [ec75375a] Finished in 0.097 seconds with exit status 0 (successful).
+  INFO [19ba5c1c] Running /usr/bin/env ln -s /home/deploy/apps/my-app/shared/tmp/pids /home/deploy/apps/my-app/releases/20170506185022/tmp/pids as root@128.199.174.38
+  INFO [19ba5c1c] Finished in 0.091 seconds with exit status 0 (successful).
+  INFO [7608526c] Running /usr/bin/env ln -s /home/deploy/apps/my-app/shared/tmp/cache /home/deploy/apps/my-app/releases/20170506185022/tmp/cache as root@128.199.174.38
+  INFO [7608526c] Finished in 0.089 seconds with exit status 0 (successful).
+  INFO [1844ea38] Running /usr/bin/env ln -s /home/deploy/apps/my-app/shared/tmp/sockets /home/deploy/apps/my-app/releases/20170506185022/tmp/sockets as root@128.199.174.38
+  INFO [1844ea38] Finished in 0.090 seconds with exit status 0 (successful).
+  INFO [26622bc3] Running /usr/bin/env ln -s /home/deploy/apps/my-app/shared/vendor/bundle /home/deploy/apps/my-app/releases/20170506185022/vendor/bundle as root@128.199.174.38
+  INFO [26622bc3] Finished in 0.088 seconds with exit status 0 (successful).
+  INFO [f56d3023] Running /usr/bin/env ln -s /home/deploy/apps/my-app/shared/public/system /home/deploy/apps/my-app/releases/20170506185022/public/system as root@128.199.174.38
+  INFO [f56d3023] Finished in 0.088 seconds with exit status 0 (successful).
+  INFO [bec3c56d] Running /usr/bin/env ln -s /home/deploy/apps/my-app/shared/public/assets /home/deploy/apps/my-app/releases/20170506185022/public/assets as root@128.199.174.38
+  INFO [bec3c56d] Finished in 0.090 seconds with exit status 0 (successful).
+  INFO [2487e4a8] Running /usr/bin/env bundle install --path /home/deploy/apps/my-app/shared/vendor/bundle --without development test --deployment as root@128.199.174.38
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-05-07 01:54:14 +0700 cap staging deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [c8f44ce0] Running /usr/bin/env mkdir -p /tmp/my-app/ as root@128.199.174.38
+  INFO [c8f44ce0] Finished in 1.054 seconds with exit status 0 (successful).
+  INFO Uploading /tmp/my-app/git-ssh.sh 100.0%
+  INFO [ef2e3f1b] Running /usr/bin/env chmod +rx /tmp/my-app/git-ssh.sh as root@128.199.174.38
+  INFO [ef2e3f1b] Finished in 0.097 seconds with exit status 0 (successful).
+  INFO [c3fcebd3] Running /usr/bin/env git ls-remote --heads git@github.com:no5013/capistrano_practice.git as root@128.199.174.38
+  INFO [c3fcebd3] Finished in 3.669 seconds with exit status 0 (successful).
+  INFO [b60f3386] Running /usr/bin/env mkdir -p /home/deploy/apps/my-app/shared /home/deploy/apps/my-app/releases as root@128.199.174.38
+  INFO [b60f3386] Finished in 0.137 seconds with exit status 0 (successful).
+  INFO [5a6d0ff0] Running /usr/bin/env mkdir -p /home/deploy/apps/my-app/shared/bin /home/deploy/apps/my-app/shared/log /home/deploy/apps/my-app/shared/tmp/pids /home/deploy/apps/my-app/shared/tmp/cache /home/deploy/apps/my-app/shared/tmp/sockets /home/deploy/apps/my-app/shared/vendor/bundle /home/deploy/apps/my-app/shared/public/system /home/deploy/apps/my-app/shared/public/assets as root@128.199.174.38
+  INFO [5a6d0ff0] Finished in 0.100 seconds with exit status 0 (successful).
+  INFO [c358c491] Running /usr/bin/env mkdir -p /home/deploy/apps/my-app/shared/config as root@128.199.174.38
+  INFO [c358c491] Finished in 0.092 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/deploy/apps/my-app/repo
+  INFO [136b9b6c] Running /usr/bin/env git remote update --prune as root@128.199.174.38
+  INFO [136b9b6c] Finished in 2.707 seconds with exit status 0 (successful).
+  INFO [2af44331] Running /usr/bin/env mkdir -p /home/deploy/apps/my-app/releases/20170506185455 as root@128.199.174.38
+  INFO [2af44331] Finished in 0.095 seconds with exit status 0 (successful).
+  INFO [eb2f5681] Running /usr/bin/env git archive master | tar -x -f - -C /home/deploy/apps/my-app/releases/20170506185455 as root@128.199.174.38
+  INFO [eb2f5681] Finished in 0.106 seconds with exit status 0 (successful).
+  INFO [59c8f1c4] Running /usr/bin/env echo "2f55c23982e14be50dd65fb257059be43cb11acf" >> REVISION as root@128.199.174.38
+  INFO [59c8f1c4] Finished in 0.094 seconds with exit status 0 (successful).
+  INFO [7888e1c7] Running /usr/bin/env mkdir -p /home/deploy/apps/my-app/releases/20170506185455/config as root@128.199.174.38
+  INFO [7888e1c7] Finished in 0.099 seconds with exit status 0 (successful).
+  INFO [c57ff0a1] Running /usr/bin/env rm /home/deploy/apps/my-app/releases/20170506185455/config/database.yml as root@128.199.174.38
+  INFO [c57ff0a1] Finished in 0.092 seconds with exit status 0 (successful).
+  INFO [2a298284] Running /usr/bin/env ln -s /home/deploy/apps/my-app/shared/config/database.yml /home/deploy/apps/my-app/releases/20170506185455/config/database.yml as root@128.199.174.38
+  INFO [2a298284] Finished in 0.095 seconds with exit status 0 (successful).
+  INFO [0d0b186b] Running /usr/bin/env mkdir -p /home/deploy/apps/my-app/releases/20170506185455 /home/deploy/apps/my-app/releases/20170506185455/tmp /home/deploy/apps/my-app/releases/20170506185455/vendor /home/deploy/apps/my-app/releases/20170506185455/public as root@128.199.174.38
+  INFO [0d0b186b] Finished in 0.099 seconds with exit status 0 (successful).
+  INFO [946b08b7] Running /usr/bin/env rm -rf /home/deploy/apps/my-app/releases/20170506185455/bin as root@128.199.174.38
+  INFO [946b08b7] Finished in 0.096 seconds with exit status 0 (successful).
+  INFO [409fa7d1] Running /usr/bin/env ln -s /home/deploy/apps/my-app/shared/bin /home/deploy/apps/my-app/releases/20170506185455/bin as root@128.199.174.38
+  INFO [409fa7d1] Finished in 0.094 seconds with exit status 0 (successful).
+  INFO [e9746382] Running /usr/bin/env rm -rf /home/deploy/apps/my-app/releases/20170506185455/log as root@128.199.174.38
+  INFO [e9746382] Finished in 0.093 seconds with exit status 0 (successful).
+  INFO [9ce463df] Running /usr/bin/env ln -s /home/deploy/apps/my-app/shared/log /home/deploy/apps/my-app/releases/20170506185455/log as root@128.199.174.38
+  INFO [9ce463df] Finished in 0.095 seconds with exit status 0 (successful).
+  INFO [7f74b05f] Running /usr/bin/env ln -s /home/deploy/apps/my-app/shared/tmp/pids /home/deploy/apps/my-app/releases/20170506185455/tmp/pids as root@128.199.174.38
+  INFO [7f74b05f] Finished in 0.095 seconds with exit status 0 (successful).
+  INFO [4002a1a6] Running /usr/bin/env ln -s /home/deploy/apps/my-app/shared/tmp/cache /home/deploy/apps/my-app/releases/20170506185455/tmp/cache as root@128.199.174.38
+  INFO [4002a1a6] Finished in 0.097 seconds with exit status 0 (successful).
+  INFO [b38affa8] Running /usr/bin/env ln -s /home/deploy/apps/my-app/shared/tmp/sockets /home/deploy/apps/my-app/releases/20170506185455/tmp/sockets as root@128.199.174.38
+  INFO [b38affa8] Finished in 0.108 seconds with exit status 0 (successful).
+  INFO [5c3cf63a] Running /usr/bin/env ln -s /home/deploy/apps/my-app/shared/vendor/bundle /home/deploy/apps/my-app/releases/20170506185455/vendor/bundle as root@128.199.174.38
+  INFO [5c3cf63a] Finished in 0.099 seconds with exit status 0 (successful).
+  INFO [de7fa344] Running /usr/bin/env ln -s /home/deploy/apps/my-app/shared/public/system /home/deploy/apps/my-app/releases/20170506185455/public/system as root@128.199.174.38
+  INFO [de7fa344] Finished in 0.099 seconds with exit status 0 (successful).
+  INFO [e2e2b3ff] Running /usr/bin/env ln -s /home/deploy/apps/my-app/shared/public/assets /home/deploy/apps/my-app/releases/20170506185455/public/assets as root@128.199.174.38
+  INFO [e2e2b3ff] Finished in 0.098 seconds with exit status 0 (successful).
+  INFO [92ae2b1a] Running /usr/bin/env bundle install --path /home/deploy/apps/my-app/shared/vendor/bundle --without development test --deployment as root@128.199.174.38
