@@ -11,7 +11,7 @@ role :web, application_master
 role :db,  application_master
 
 set :rails_env, 'staging'
-set :host, 'my-app.com'
+set :host, '128.199.174.38'
 set :keep_releases, 2
 
 # Extended Server Syntax
@@ -20,7 +20,7 @@ set :keep_releases, 2
 # definition into the server list. The second argument
 # something that quacks like a hash can be used to set
 # extended properties on the server.
-server 'example.com', user: 'deploy', roles: %w{web app}, my_property: :my_value
+server '128.199.174.38', user: 'root', roles: %w{web app}, my_property: :my_value
 
 # you can set custom ssh options
 # it's possible to pass any option but you need to keep in mind that net/ssh understand limited list of options
