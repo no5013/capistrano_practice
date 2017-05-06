@@ -1,0 +1,63 @@
+# Logfile created on 2017-05-07 01:32:58 +0700 by logger.rb/v1.2.7
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-05-07 01:32:58 +0700 cap staging deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [752c362b] Running /usr/bin/env mkdir -p /tmp/my-app/ on 128.199.174.38
+  INFO [cbdeafd3] Running /usr/bin/env mkdir -p /tmp/my-app/ as deploy@example.com
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-05-07 01:34:09 +0700 cap staging deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [1b2a9a29] Running /usr/bin/env mkdir -p /tmp/my-app/ as deploy2@example.com
+  INFO [855aec10] Running /usr/bin/env mkdir -p /tmp/my-app/ on 128.199.174.38
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-05-07 01:35:12 +0700 cap staging deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [5ddc3de5] Running /usr/bin/env mkdir -p /tmp/my-app/ as deploy@example.com
+  INFO [aa155030] Running /usr/bin/env mkdir -p /tmp/my-app/ on 128.199.174.38
+  INFO [aa155030] Finished in 1.004 seconds with exit status 0 (successful).
+  INFO Uploading /tmp/my-app/git-ssh.sh 100.0%
+  INFO [d4e7ce9a] Running /usr/bin/env chmod +rx /tmp/my-app/git-ssh.sh on 128.199.174.38
+  INFO [d4e7ce9a] Finished in 0.106 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-05-07 01:41:35 +0700 cap staging deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [c6c564ee] Running /usr/bin/env mkdir -p /tmp/my-app/ as root@128.199.174.38
+  INFO [c6c564ee] Finished in 1.037 seconds with exit status 0 (successful).
+  INFO Uploading /tmp/my-app/git-ssh.sh 100.0%
+  INFO [ca10cc80] Running /usr/bin/env chmod +rx /tmp/my-app/git-ssh.sh as root@128.199.174.38
+  INFO [ca10cc80] Finished in 0.099 seconds with exit status 0 (successful).
+  INFO [a8b33ba2] Running /usr/bin/env git ls-remote --heads git@github.com:no5013/capistrano_practice.git as root@128.199.174.38
+  INFO [a8b33ba2] Finished in 2.801 seconds with exit status 0 (successful).
+  INFO [13b48562] Running /usr/bin/env mkdir -p /home/deploy/apps/my-app/shared /home/deploy/apps/my-app/releases as root@128.199.174.38
+  INFO [13b48562] Finished in 0.108 seconds with exit status 0 (successful).
+  INFO [96b09889] Running /usr/bin/env mkdir -p /home/deploy/apps/my-app/shared/bin /home/deploy/apps/my-app/shared/log /home/deploy/apps/my-app/shared/tmp/pids /home/deploy/apps/my-app/shared/tmp/cache /home/deploy/apps/my-app/shared/tmp/sockets /home/deploy/apps/my-app/shared/vendor/bundle /home/deploy/apps/my-app/shared/public/system /home/deploy/apps/my-app/shared/public/assets as root@128.199.174.38
+  INFO [96b09889] Finished in 0.137 seconds with exit status 0 (successful).
+  INFO [85c97f1b] Running /usr/bin/env mkdir -p /home/deploy/apps/my-app/shared/config as root@128.199.174.38
+  INFO [85c97f1b] Finished in 0.099 seconds with exit status 0 (successful).
+ ERROR linked file /home/deploy/apps/my-app/shared/config/database.yml does not exist on 128.199.174.38
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-05-07 01:42:07 +0700 cap staging deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [960bb695] Running /usr/bin/env mkdir -p /tmp/my-app/ as root@128.199.174.38
+  INFO [960bb695] Finished in 0.981 seconds with exit status 0 (successful).
+  INFO Uploading /tmp/my-app/git-ssh.sh 100.0%
+  INFO [a013eca1] Running /usr/bin/env chmod +rx /tmp/my-app/git-ssh.sh as root@128.199.174.38
+  INFO [a013eca1] Finished in 0.093 seconds with exit status 0 (successful).
+  INFO [1edcc2d8] Running /usr/bin/env git ls-remote --heads git@github.com:no5013/capistrano_practice.git as root@128.199.174.38
+  INFO [1edcc2d8] Finished in 2.667 seconds with exit status 0 (successful).
+  INFO [07690e29] Running /usr/bin/env mkdir -p /home/deploy/apps/my-app/shared /home/deploy/apps/my-app/releases as root@128.199.174.38
+  INFO [07690e29] Finished in 0.133 seconds with exit status 0 (successful).
+  INFO [887c0d90] Running /usr/bin/env mkdir -p /home/deploy/apps/my-app/shared/bin /home/deploy/apps/my-app/shared/log /home/deploy/apps/my-app/shared/tmp/pids /home/deploy/apps/my-app/shared/tmp/cache /home/deploy/apps/my-app/shared/tmp/sockets /home/deploy/apps/my-app/shared/vendor/bundle /home/deploy/apps/my-app/shared/public/system /home/deploy/apps/my-app/shared/public/assets as root@128.199.174.38
+  INFO [887c0d90] Finished in 0.096 seconds with exit status 0 (successful).
+  INFO [f00dfd6b] Running /usr/bin/env mkdir -p /home/deploy/apps/my-app/shared/config as root@128.199.174.38
+  INFO [f00dfd6b] Finished in 0.107 seconds with exit status 0 (successful).
+  WARN puma.rb NOT FOUND!
+  INFO Uploading /home/deploy/apps/my-app/shared/puma.rb 100.0%
+  INFO puma.rb generated
+  INFO [127f3786] Running /usr/bin/env git clone --mirror git@github.com:no5013/capistrano_practice.git /home/deploy/apps/my-app/repo as root@128.199.174.38
+  INFO [127f3786] Finished in 2.906 seconds with exit status 0 (successful).
+  INFO [40e06d88] Running /usr/bin/env git remote update --prune as root@128.199.174.38
+  INFO [40e06d88] Finished in 2.766 seconds with exit status 0 (successful).
+  INFO [02fb3fec] Running /usr/bin/env mkdir -p /home/deploy/apps/my-app/releases/20170506184213 as root@128.199.174.38
+  INFO [02fb3fec] Finished in 0.103 seconds with exit status 0 (successful).
+  INFO [3ede8f55] Running /usr/bin/env git archive master | tar -x -f - -C /home/deploy/apps/my-app/releases/20170506184213 as root@128.199.174.38
