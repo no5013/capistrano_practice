@@ -10,7 +10,7 @@ role :app, application_master
 role :web, application_master
 role :db,  application_master
 
-set :rails_env, 'staging'
+set :rails_env, 'development'
 set :host, '128.199.174.38'
 set :keep_releases, 2
 
